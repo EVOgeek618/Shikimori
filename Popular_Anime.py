@@ -3,7 +3,7 @@ import urllib, string
 import time
 def API(st):
     st=st[:len('https://shikimori.one')]+'/api'+[len('https://shikimori.one'):]
-return st
+    return st
 pages=[]
 notpages=[]
 listofanime={}

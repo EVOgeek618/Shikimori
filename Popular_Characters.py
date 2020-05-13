@@ -4,9 +4,9 @@ dic={}
 n=input()
 r=input().split(' ')
 for li in range(int(n)):
-    #link=urllib.request.urlopen("https://shikimori.one/people/"+r[li]+"/roles")
-    link = urllib.request.urlopen("https://shikimori.one/animes/" + r[li] + "/characters")
-    #link = urllib.request.urlopen("https://shikimori.one/mangas/" + r[li] + "/characters")
+    #link=urllib.request.urlopen("https://shikimori.one/people/"+r[li]+"/roles") #Люди
+    link = urllib.request.urlopen("https://shikimori.one/animes/" + r[li] + "/characters") #Аниме
+    #link = urllib.request.urlopen("https://shikimori.one/mangas/" + r[li] + "/characters") #Манга
     list2 = []
     for line in link.readlines():
         list2.append(line)

@@ -1,8 +1,8 @@
 import urllib.request, string
 import time
 dic={}
-n=input()
 r=input().split(' ')
+n=len(r)
 for li in range(int(n)):
     #link=urllib.request.urlopen("https://shikimori.one/people/"+r[li]+"/roles") #Люди
     link = urllib.request.urlopen("https://shikimori.one/animes/" + r[li] + "/characters") #Аниме
